@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form buttons</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="jumbotron text-center">
+	<h1>Cars</h1>
+</div>
+
+<div class="container-fluid">
+
+	<div class="col-lg-10 col-lg-offset-2">
+		
+		<form action="#">
+		  <input type="radio" name="gender" value="volvo" id="volvoBtn"> Volvo<br>
+		  <input type="radio" name="gender" value="saab" id="sabbBtn"> Saab<br>
+		  <input type="radio" name="gender" value="mercedes" id="mercedesBtn"> Mercedes <br><br>
+		  <input type="button" class="btn btn-primary" value="Show cars" id="showCarsBtn">
+		</form>
+
+	</div>
+
+
+	<div class="row" id="rowVolvo">
+		<div class="col-lg-10 col-lg-offset-2">
+			<div class="col-lg-10 col-lg-offset-1">
+			<h2>Volvo cars</h2>
+			<div class="col-lg-10 col-lg-offset-1">
+				<table class="table">
+					<thead>
+						<th>s40</th>
+						<th>s60</th>
+						<th>s80</th>
+						<th>xc60</th>
+						<th>xc70</th>
+						<th>xc90</th>
+						
+					</thead>
+
+					<tbody id="volvoTbody">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>	
+		</div>
+	</div>
+
+	<div class="row" id="rowSaab">
+		<div class="col-lg-10 col-lg-offset-2">
+			<div class="col-lg-10 col-lg-offset-1">
+			<h2>Saab cars</h2>
+			<div class="col-lg-10 col-lg-offset-1">
+				<table class="table">
+					<thead>
+						<th>9-3</th>
+						<th>9-5</th>
+						
+					</thead>
+
+					<tbody id="saabTbody">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>	
+		</div>
+	</div>
+
+	<div class="row" id="rowMercedes">
+		<div class="col-lg-10 col-lg-offset-2">
+			<div class="col-lg-10 col-lg-offset-1">
+			<h2>Mercedes</h2>
+			<div class="col-lg-10 col-lg-offset-1">
+				<table class="table">
+					<thead>
+						<th>a class</th>
+						<th>e class</th>
+						<th>d class</th>
+						<th>c clas</th>
+					</thead>
+
+					<tbody id="mercedesTbody">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>	
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="main.js"></script>	
+</body>
+</html>
